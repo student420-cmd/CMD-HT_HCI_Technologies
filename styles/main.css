@@ -17,6 +17,7 @@ header {
 	position:fixed;
 	top:0;
 	width:100%;
+	z-index: 0;
 }
 
 header ul {
@@ -35,9 +36,32 @@ header li {
 	align-items:center;
 	align-content: center;
 }
+li.dropdown{
+	display: inline-block;
+}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color:white;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+	z-index:1;
+}
 
-.link{	
+.dropdown-content a {
+	color:black;
+	padding: 18px 22px;
+	text-decoration:none;
 	display:block;
+	text-align:left;
+}
+.dropdown-content a:hover{
+	background-color:#f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+	display:block;
+}
+.link, .dropbtn{	
+	display:inline-block;
 	padding:20px 22px;
 	color:white;
 	text-align: center;
@@ -50,7 +74,7 @@ header li {
 	margin: 0 10px 0 10px;
 }
 
-.link:hover{
+.link:hover, .dropdown:hover .dropbtn{
 	background-color:white;
 	color:darkcyan;
 }
@@ -62,13 +86,25 @@ article{
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 	border-radius: 20px;
 	flex-direction: column;
-	grid-row:2/3;
 	background-color:white;
 }
 
 article img {
 	width:100%;
 	border-radius:20px;
+}
+.articleHover:hover{
+	background-color:lightgray;
+}
+.articleLink {
+	display:inline;
+	text-decoration: none;
+	color:black;
+	grid-row:2/3;
+}
+.active {
+	color:darkcyan;
+	background-color:white;
 }
 
 .responsiveGrid{
