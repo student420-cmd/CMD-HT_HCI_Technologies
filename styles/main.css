@@ -12,8 +12,6 @@ h1{
 	font-weight: 700;
 }
 
-
-
 article{
 	display:flex;
 	padding:20px;
@@ -33,8 +31,23 @@ article{
 	border-radius:20px;
 }
 
+@keyframes hover {
+	from {background-color:white;}
+	to {background-color: #E3E3E3;}
+}
+@keyframes reversehover {
+	from { background-color:#E3E3E3;}
+	to {background-color:white;}
+}
 .articleHover:hover{
-	background-color:lightgray;
+	animation-name: hover;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.articleHover{
+	animation-name: reversehover;
+	animation-duration: 0.5s;
 }
 
 .articleLink {
