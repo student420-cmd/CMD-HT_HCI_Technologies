@@ -189,7 +189,10 @@ li.dropdown{
 	text-decoration: none;
 	align-self: baseline;
 }
-
+	.active {
+		color:darkcyan;
+		background-color:white;
+	}
 .logo {
 	padding:0;
 	height:57px;
@@ -211,4 +214,34 @@ li.dropdown{
 	grid-column-gap: 20px;
 	margin:70px 0 0 0;
 	justify-content: center;
+}
+
+.responsiveGrid2 article img{
+	width:40%;
+	border-radius:20px;
+}
+.responsiveGrid2 article p {
+	
+}
+.blog {
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+.blog p {
+	width:50%;
+}
+.blog img {
+	margin:20px;
+	width:50%;
+	height:50%;
+}
+.blog img:last-child{
+	align-self: flex-start;
+	margin: 0 53% 0 0;
+}
+.blog h3{ 
+	width:93%;
+	align-self: flex-start;
 }
