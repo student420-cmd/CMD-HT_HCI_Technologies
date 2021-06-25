@@ -51,20 +51,75 @@
 	<article id="WS1">
 		<h1>AR&amp;VR</h1>
 		<h2>Unreal Engine</h2>
-		<div class="blog">
-		<p>In this assignment, I had to learn the basics of the Unreal Engine, developed by Epic. We had to follow a small tutorial that guided us through different processes of modeling, texturing and animating virtual objects in a virtual environment.</p><img src="../images/DifferentScreensUnity.jpg" alt=""/><img src="../images/BanaanImported&Textured.png" alt=""/> <p>After importing the prebuild mesh, a different word for model, I had to texture it first. First I had to add an material and select a picture to be used as an texture. After that I had to select the model of the banana again, to add the material I just created to be used as an texture. See the following figure</p><p>Last thing that needed to be done, was the animation. Luckily for me, this was very easy to do. I had to add a trigger and an event to make the banana rotate. In the figure on the right you can see a red box called 'Event Tick'. In unity time is displayed in ticks and this basically is Unity language for 'every second'. The blue box called 'AddLocalRotation' does exactly what it says it does. Adds a rotation to the object, I set the Z value to 1. This makes this model rotate 1 degree in the Z-axis. Link it up with the 'Event Tick' and voila!</p><img src="../images/Eventgraph banana.png" alt=""/><h3>End result</h3><img src="../images/BananaTurnFinished.gif" alt=""/></div>
+		<div>
+		<p>In this assignment, I had to learn the basics of the Unreal Engine, developed by Epic. We had to follow a small tutorial that guided us through different processes of modeling, texturing and animating virtual objects in a virtual environment.</p><img src="../images/DifferentScreensUnity.jpg" alt=""/> <p>After importing the prebuild mesh, a different word for model, I had to texture it first. First I had to add an material and select a picture to be used as an texture. After that I had to select the model of the banana again, to add the material I just created to be used as an texture. See the following figure</p><img src="../images/BanaanImported&Textured.png" alt=""/><p>Last thing that needed to be done, was the animation. Luckily for me, this was very easy to do. I had to add a trigger and an event to make the banana rotate. In the figure on the right you can see a red box called 'Event Tick'. In unity time is displayed in ticks and this basically is Unity language for 'every second'. The blue box called 'AddLocalRotation' does exactly what it says it does. Adds a rotation to the object, I set the Z value to 1. This makes this model rotate 1 degree in the Z-axis. Link it up with the 'Event Tick' and voila!</p><img src="../images/Eventgraph banana.png" alt=""/><h3>End result</h3><img src="../images/BananaTurnFinished.gif" alt=""/></div>
 		<h2>A-Frame</h2>
+		<p>Here I used the A-Frame API to create different shapes. As you can see I've used an orange cylinder, a green circle, a red octahedron and a  yellow box. </p>
+		<img src="../images/A-Frame 03 Step 6.png" alt=""/>
+		<p>Here I used the animation property to give them a rotation. The box and the octahedron are rotating on the Y-axis. The green circle is rotating on the X-Axis. And the orange cylinder is rotating in both the X and Y axis.</p>
+		<img src="../images/A-Frame 04-Step 7.gif" alt=""/>
+		<p>The red circle represents the user focal point, this where he or she looks at. The moment it 'looks' at an object it can cause an event. The red box will turn red, the yellow box will turn and shrink after looking for 1 second.</p>
+		<img src="../images/A-Frame Interaction Headset.gif" alt=""/>
 	</article>
 
 	<article id="WS2">
 		<h1>Arduino</h1>
-		<p>Lorem ipsum.</p>
+		<h4>Exercise 3B</h4>
+		<p>In the loop I declared in the code to turn on the green light first, then after half a second it will turn off the green light. And turn on the yellow light, wait half a second and turn it off and turn on the green light again. This will continue to happen till there is no more electricity running through the Arduino.</p>
+		<img src="../images/Exercise 3B.gif" alt=""/>
+		<h4>Exercise 4C</h4>
+		<p>Instead of turning the lights on and off, I let them fade in and out. Yellow starts fully lit but starts to fade slowly, simultaneously the green light will increase in brightness. When the yellow light turns completely off, the loop reset again. </p>
+		<img src="../images/Exercise 4C.gif" alt=""/>
+		<h4>Exercise 6C</h4>
+		<p>Now we use a knob, that we can turn. When completely turned to the left, the green light stays off and the yellow light on. When I turn the knob to the right, the yellow light will slowly fade off while the green light will slowly increase brightness.</p>
+		<img src="../images/Exercise 6C.gif" alt=""/>
+		<h4>Exercise 7A</h4>
+		<p>This LED Matrix has a grid of LEDs of 9x9. Each LED can be turned on or off. By turning on a few specific LED locations, it will look a like a smiley! You can change this automatically, like in the GIF. First it will smile, a second later it will frown.</p>
+		<img src="../images/Exercise 7A.gif" alt=""/>
+		<h4>Exercise 8</h4>
+		<p>The small sensor on the left, is a LDR sensor. It can sense the amount of light in the environment. I used this sensor to communicate a brightness to the two LEDs. The less bright light the sensor recieves, the lesser bright the LED's will be.</p>
+		<img src="../images/Exercise 8.gif" alt=""/>
+		<h4>Exercise 9C</h4>
+		<p>This small cylinder is actually a speaker. Unfortenately it can only send one tone. If you listen closely, it will make siren noise. I accomplished this by changing the hertz in a loop to go up and down, which make it sound like a siren.</p>
+		<video width="600" style="border-radius:20px;"  controls><source src="../images/Exercise 9C.mp4" ></video>
+		<h4>Exercise 11C</h4>
+		<p>The sensor on the left is called a Ultrasonic Sensor, it is used to measure distances. Since it can measure vibrations in the air and by doing some quick calculations, it can estimate the distance between itself and an object. Here I set up a LED and the sensor, when the box is closer than 10 cm, the LED will turn on.</p>
+		<img src="../images/Exercise 11C.gif" alt=""/>
+		<h4>Exercise 12D</h4>
+		<p>In this GIF I hooked up my Arduino to another program called Processing. By recieving the data from the knob, I can manipulate the size of the circle on my monitor.</p>
+		<img src="../images/Exercise 12D.gif" alt=""/>
+		<h4>Exercise 13B</h4>
+		<p>Here I hooked up a small button and a LED. When the button is pressed the LED is turned on.</p>
+		<img src="../images/Exercise 13B.gif" alt=""/>
+		<h4>Exercise 14B</h4>
+		<p>This is called a servomotor, it can rotate very precisely. I've changed the code here to make it kind of dance. </p>
+		<img src="../images/Exercise 14B.gif" alt=""/>
 	</article>
 	
 
 	<article id="WS3">
-		<h1>CV</h1>
-		<p>Lorem ipsum.</p>
+		<h1>CV</h1><div>
+		<h4>Exercise 2F:</h4>
+		<p>Here I drew 5 circles in 5 different colors. Starting with red and ending with light blue. The reason why they are overlapping is because it draws the circles one by one, starting with red.</p>
+		<img src="../images/2F.png" alt=""/>
+		<h4>Exercise 2I:</h4>
+		<p>You don't only have circles, you can draw, triangles, rectangles, lines and quadrahegon</p>
+		<img src="../images/2I.png" alt=""/>
+		<h4>Exercise 2O:</h4>
+		<p>Here we make use of the location of the cursor, the orange ball is the mouse location. One end of the line is connected to floor and the other to the mouse. Then I added three more rectangles with the colors, red, white and blue. The width of these rectangles is determined by the X-axis value of the mouse.</p>
+		<img src="../images/2O.png" alt=""/>
+		<h4>Exercise 3B:</h4>
+		<p>In the left the circle is black, but in the other its gray? This circle reacts to cursor, if its hovered by a cursor it will turn gray. It will also send a value to the Arduino. This can then be used as trigger to an event in the arduino.</p>
+		<img src="../images/3B1.png" alt=""/>
+		<img src="../images/3B3.png" alt=""/>
+		<h4>Exercise 5C</h4>
+		<p>In this preview, everytime when the mouse goes over the window it will print circles. When click the mousebutton, it will fill in random colors</p>
+		<img src="../images/Opdracht5C.gif" alt=""/>
+		
+		<h4>Exercise 5E</h4>
+		<p>Here I'm using face tracking to fill in a circle. Starts in red and when I turn my head, it will color them blue.</p>
+		<img src="../images/Opdracht5E.gif" alt=""/>
+		</div>
 	</article>
 	</main>
 </body>

@@ -207,7 +207,7 @@ li.dropdown{
 
 .responsiveGrid2{
 	display:grid;
-	grid-template-columns: 80%;
+	grid-template-columns: 60%;
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	margin:70px 0 0 0;
